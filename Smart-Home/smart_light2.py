@@ -42,6 +42,8 @@ class Scheduler:
         computed for delay will be zero or negative, and we don't need to wait; we can
         perform the callback immediately. If we're before the required time, then we need
         to sleep until the time arrives.
+        
+        it's essential to create an instance of a Scheduler class; it's the object that's callable, not the class.
         """
         while self.tasks:
             now = time.time()

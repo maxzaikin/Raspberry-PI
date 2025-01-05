@@ -1,5 +1,5 @@
 """ 
-Project Smart-House
+Project: Smart-House
 
 Author: Maks V. Zaikin
 Date: 06-Jan-2025

@@ -60,21 +60,44 @@ class ADCReader:
         time.sleep(0.000002)
         GPIO.output(self.clk_pin, 1)
         time.sleep(0.000002)
+        
         GPIO.output(self.clk_pin, 0)
         GPIO.output(self.dio_pin, sel)
         time.sleep(0.000002)
         GPIO.output(self.clk_pin, 1)
 
-        # Чтение данных
+        GPIO.output(self.dio_pin, 1)
+        time.sleep(0.000002)
+        GPIO.output(self.clk_pin, 0)
+        GPIO.output(self.dio_pin, 1)
+        time.sleep(0.000002)       
+        
         dat1 = 0
         GPIO.setup(self.dio_pin, GPIO.IN)
-        for _ in range(8):
-            GPIO.output(self.clk_pin, 1)
+        
+        for i in range(0, 8):
+            GPIO.output(self.clk_pin, 1) 
             time.sleep(0.000002)
-            GPIO.output(self.clk_pin, 0)
+            GPIO.output(self.clk_pin, 0) 
             time.sleep(0.000002)
-            dat1 = (dat1 << 1) | GPIO.input(self.dio_pin)
-
+            #GPIO.setup(self.clk_pin, GPIO.IN)
+            dat1 = dat1 << 1 | GPIO.input(self.dio_pin)  
+        
+        dat2 = 0
+        
+        for i in range(0, 8):
+            dat2 = dat2 | GPIO.input(self.dio_pin) << i
+            GPIO.output(self.clk_pin, 1);  
+            time.sleep(0.000002)
+            GPIO.output(self.clk_pin, 0);  
+            time.sleep(0.000002)
+        
         GPIO.output(self.cs_pin, 1)
         GPIO.setup(self.dio_pin, GPIO.OUT)
-        return dat1
+        
+        
+        if dat1 == dat2:
+            return dat1
+        else:
+            return 0
+        

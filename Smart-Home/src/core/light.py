@@ -21,7 +21,7 @@ class SmartLight:
         self.led_val= GPIO.PWM(self.pin, 2000)
         self.led_val.start(0)
 
-    def set_brightness(self, value):
+    def update_light_state(self, value):
         """set_brightness _summary_
 
         _extended_summary_
@@ -30,8 +30,8 @@ class SmartLight:
             value -- _description_
         """
 
-        if value > 250:
-            duty_cycle= value * 100 /255
+        if value > 235:
+            duty_cycle= 100
         else:
             duty_cycle= 0
 

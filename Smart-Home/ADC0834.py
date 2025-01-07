@@ -117,7 +117,7 @@ def loop():
 	while True:
 		for i in range(4):
 			res = getResult(i)
-			print ('res{} = {}'.format(i,res))
+			print ('ddd res{} = {}'.format(i,res))
 			time.sleep(0.1)
 		time.sleep(1)
 

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 import RPi.GPIO as GPIO
 import ADC0834
@@ -31,10 +30,10 @@ def loop():
 		print ('analog value = %d' % analogVal)
   
 		if analogVal > 250:
-			led_val.ChangeDutyCycle(analogVal*100/255)
+			led_val.ChangeDutyCycle(100)
 		else:
 			led_val.ChangeDutyCycle(0)
-   
+      
 		time.sleep(0.2)
 
 if __name__ == '__main__':

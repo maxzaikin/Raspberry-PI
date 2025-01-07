@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent / "src"))
 
 from core.light import SmartLight
-from adapters.adc0834 import ADCReader
+from core.adc0834 import ADCReader
 from core.smart_home import SmartHome
 
 class LightObserver:
@@ -22,8 +22,8 @@ class LightObserver:
     def update(self):
         """Обновляет состояние света в зависимости от значения ADC."""
         analog_value = self.adc_reader.read()
-        print(f"Analog value: {analog_value}")
-        self.light.set_brightness(analog_value)
+        print(f"Analog value: {255 - analog_value}")
+        self.light.update_light_state(analog_value)
 
 if __name__ == '__main__':
     try:

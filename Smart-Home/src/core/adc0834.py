@@ -47,14 +47,14 @@ class ADCReader:
         GPIO.output(self.clk_pin, 1)
         time.sleep(0.000002)
 
-        # Режим Single End
+        # Select Single End Mode
         GPIO.output(self.clk_pin, 0)
         GPIO.output(self.dio_pin, 1)
         time.sleep(0.000002)
         GPIO.output(self.clk_pin, 1)
         time.sleep(0.000002)
 
-        # Выбор канала
+        # Select Channel
         GPIO.output(self.clk_pin, 0)
         GPIO.output(self.dio_pin, odd)
         time.sleep(0.000002)

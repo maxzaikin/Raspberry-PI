@@ -18,6 +18,7 @@ This project is detailed further in my Medium article:
 ## 🔍 Key Features
 
 1. **Understanding Analog-to-Digital Conversion with ADC0834:**
+
     ❤️ The heart of our project is the ADC0834, an 8-bit microelectronic component that converts analog inputs into digital values ranging from 0 to 255.  
       - It doesn't interpret data but translates it into numbers for our Raspberry Pi program to process.
       - It supports up to 4 simultaneous connections and can operate in two modes:

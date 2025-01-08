@@ -1,7 +1,8 @@
 # Welcome to Smart-Home project
 
-<img src="./_resources/Connected-Together-and-Work-Rear-Transparent.png" width="350"/>
-<img src="../_resources/Connected-Together-and-Work-Rear-Transparent.png" width="350"/>
+<img src="../_resources/Connected-Together-and-Work-Rear-Transparent.png" width="550"/>
+
+<img src="../_resources/RPi-Wired-to-house-2.png" width="550"/>
 
 ## 🏡 Project Overview
 

@@ -50,7 +50,7 @@ This project is detailed further in my Medium article:
     │   │   ├── device.py
     │   │   ├── light.py
     │   │   ├── smart_home.py
-    └──────── __init__.py
+    └─── __init__.py
 ```
 
 🤝 Call to Action 🛠️

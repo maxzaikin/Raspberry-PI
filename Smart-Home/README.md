@@ -27,7 +27,7 @@ This project is detailed further in my Medium article:
 
     🔗 We encourage you to reed following documentation Resources:
       - [Texas Instruments ADC0834-N](https://www.ti.com/product/ADC0834-N)  
-       If link above doesn't work you can open this doc from my repo [ADC0834-N](https://www.ti.com/product/ADC0834-N). I published it, after I found out that sometimes access to the document published on TI is blocked.
+       If link above doesn't work you can open this doc from my repo [ADC0834-N](../_resources/adc0834-n.pdf). I published it, after I found out that sometimes access to the document published on TI is blocked.
       - [SPI Protocol Overview](../_resources/adc0834-n.pdf)
 
     🚀 The ADC0834 communicates via the SPI protocol, which defines how to activate, communicate with, and receive data from devices.

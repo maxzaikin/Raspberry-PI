@@ -1,9 +1,8 @@
-# Raspberry-PI project
+# Welcome to Raspberry-PI project
 
 ## 👋 Hello Everyone!
 
-I dedicate this project to all the children, parents, and enthusiasts who, like my daughters and me, want to explore the fascinating world of microelectronic components using a Raspberry Pi. 🌟
-
+I dedicate this project to all the children, parents, and enthusiasts who, like my daughters Marianna and Maya, want to explore the fascinating world of microelectronic components using a [Raspberry Pi](https://www.raspberrypi.com/products/raspberry-pi-5/). 🌟
 
 Our journey combined creativity, engineering, and a lot of fun as we explored how technology can bring new life to old toys.
 

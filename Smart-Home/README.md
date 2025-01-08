@@ -29,6 +29,7 @@ This project is detailed further in my Medium article:
       - [Texas Instruments ADC0834-N](https://www.ti.com/product/ADC0834-N)  
        If link above doesn't work you can download this data sheet from [my repo ADC0834-N](../_resources/adc0834-n.pdf). I uploaded it, after I found out that sometimes access to the document published on TI is blocked.
       - [SPI Protocol Overview](../_resources/adc0834-n.pdf)
+      - [Hank Ehly's](https://medium.com/@hankehly) article at Medium [ADC0834: A Step-by-Step Guide to Analog-to-Digital Conversion](https://medium.com/@hankehly/adc0834-a-step-by-step-guide-to-analog-to-digital-conversion-fa502eacc0c9) one more great resource, describing the nitty-gritties of the adc0834 work and programming nounces.
 
     🚀 The ADC0834 communicates via the SPI protocol, which defines how to activate, communicate with, and receive data from devices.
         Our Raspberry Pi interaction with the ADC0834 is handled in the module: [adc0834.py.](https://github.com/maxzaikin/Raspberry-PI/blob/main/Smart-Home/src/core/adc0834.py)

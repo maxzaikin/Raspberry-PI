@@ -1,9 +1,11 @@
 # Welcome to Smart-Home project
+
 <div style="display: flex; gap: 10px; align-items: center;">
 <img src="../_resources/Connected-Together-and-Work-Rear-Transparent.png" width="450"/>
 
 <img src="../_resources/RPi-Wired-to-house-2.png" width="450"/>
 </div>
+
 ## 🏡 Project Overview
 
 This is a school project where we modified a dollhouse from the Sylvanian Families series to enable connectivity with a Raspberry Pi.

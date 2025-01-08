@@ -26,8 +26,9 @@ This project is detailed further in my Medium article:
            - Differential mode: Outputs the difference between inputs.
 
     🔗 We encourage you to reed following documentation Resources:
-      - [Texas Instruments ADC0834-N](https://www.ti.com/product/ADC0834-N)
-      - [SPI Protocol Overview](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface)
+      - [Texas Instruments ADC0834-N](https://www.ti.com/product/ADC0834-N)  
+       If link above doesn't work you can open this doc from my repo [ADC0834-N](https://www.ti.com/product/ADC0834-N). I published it, after I found out that sometimes access to the document published on TI is blocked.
+      - [SPI Protocol Overview](../_resources/adc0834-n.pdf)
 
     🚀 The ADC0834 communicates via the SPI protocol, which defines how to activate, communicate with, and receive data from devices.
         Our Raspberry Pi interaction with the ADC0834 is handled in the module: [adc0834.py.](https://github.com/maxzaikin/Raspberry-PI/blob/main/Smart-Home/src/core/adc0834.py)
